@@ -1,0 +1,15 @@
+{
+  "name": "sample-crawler",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": "command.js",
+  "scripts": {
+    "debug": "node debug.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.4",
+    "p-queue": "^6.2.1",
+    "yargs": "^14.2.0"
+  }
+}
