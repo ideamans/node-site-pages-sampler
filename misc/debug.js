@@ -1,11 +1,15 @@
-const { App } = require('./index')
+const { App } = require('../index')
 
 async function main() {
   const app = new App({
     url: 'https://blog.ideamans.com/',
-    limit: 10,
+    userAgentType: 'mobile',
+    limit: 100,
+    concurrency: 4,
+    shuffle: true,
     verify: false,
-    format: 'json',
+    format: 'text',
+    debug: true,
   })
   await app.run()
   await app.output()

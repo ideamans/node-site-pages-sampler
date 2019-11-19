@@ -1,5 +1,8 @@
 {
-  "name": "sample-crawler",
+  "name": "site-pages-sampler",
+  "author": "Kunihiko Miyanaga <miyanaga@ideamans.com>",
+  "homepage": "https://github.com/ideamans/node-site-pages-sampler",
+  "description": "A simple crawler to get page URL samples in a website.",
   "version": "0.1.0",
   "main": "index.js",
   "bin": "command.js",
