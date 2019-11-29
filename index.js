@@ -26,6 +26,7 @@ class AppOptions {
       timeout: args.timeout || 10,
       concurrency: args.concurrency || 8,
       format: args.format || 'text',
+      urlHash: args.urlHash || false,
       debug: !!args.debug,
     })
   }
@@ -115,6 +116,9 @@ class App {
     })
 
     const newLinks = allLinks.filter(link => {
+      // Remove hash
+      if ( !this.urlHash ) url.hash = ''
+
       // Same host and not crawled
       if ( link.host != url.host ) return false
       if ( this.alreadyHasUrl(link) ) return false

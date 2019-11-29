@@ -13,6 +13,8 @@ Yargs
       .option('limit', { alias: 'l', description: 'Sample pages limit.', default: defaults.limit })
       .option('concurrency', { alias: 'c', description: 'Concurrency of requests.', default: defaults.concurrency })
       .option('timeout', { description: 'Request timeout. (seconds)', default: defaults.timeout })
+      .option('url-hash', { description: 'Recognizes url with hash as unique.', default: defaults.urlHash })
+      .boolean('url-hash')
       .option('verify', { alias: 'v', description: 'Verifies each url can be got.', default: defaults.verify })
       .boolean('verify')
       .option('shuffle', { description: 'Shuffles links order.', default: defaults.shuffle })
