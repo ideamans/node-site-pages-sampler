@@ -3,15 +3,16 @@
   "author": "Kunihiko Miyanaga <miyanaga@ideamans.com>",
   "homepage": "https://github.com/ideamans/node-site-pages-sampler",
   "description": "A simple crawler to get page URL samples in a website.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "bin": "command.js",
   "scripts": {
-    "debug": "node debug.js"
+    "command": "node command.js"
   },
   "license": "MIT",
   "dependencies": {
     "cheerio-httpcli": "^0.7.4",
+    "minimatch": "^3.0.4",
     "p-queue": "^6.2.1",
     "yargs": "^14.2.0"
   }
