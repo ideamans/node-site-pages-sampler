@@ -3,7 +3,7 @@
   "author": "Kunihiko Miyanaga <miyanaga@ideamans.com>",
   "homepage": "https://github.com/ideamans/node-site-pages-sampler",
   "description": "A simple crawler to get page URL samples in a website.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "index.js",
   "bin": "command.js",
   "scripts": {
