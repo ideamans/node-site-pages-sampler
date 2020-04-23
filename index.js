@@ -144,7 +144,7 @@ class App {
 
       // Normalize trailing slash
       link.pathname = link.pathname.replace(/\/+$/, '')
-      if (Path.extname(link.pathname) == '') link.pathname += '/'
+      if (link.pathname != '' && Path.extname(link.pathname) == '') link.pathname += '/'
 
       allLinks.push(link)
     })
